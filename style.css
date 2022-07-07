@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    background-color: #1e1f26;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+h1{
+    margin: 50px 0;
+}
+
+div.card-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0;
+    padding: 15px;
+}
+
+a.game-card{
+    width: 175px;
+    height: 175px;
+    margin: 0 30px;
+    background-color: #4d648d;
+    border: 1px solid #283655;
+    border-radius: 4px;
+    cursor: pointer
+}
+
+a.game-card:active{
+    background-color: #5973a1;
+}
+
+a.game-card.active{
+    border: 2px solid #a8e6cf;
+}
+
+a.game-card.rock{
+    background-image: url(../rock.svg);
+}
+
+a.game-card.paper{
+    background-image: url(../paper.svg);
+}
+
+a.game-card.scissors{
+    background-image: url(../scissors.svg);
+}
+
+button{
+    border: none;
+    border-radius: 2px;
+    background-color: #283655;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    color: white;
+    padding: 5px;
+    width: 125px;
+    font-size: 1.4rem;
+    font-weight: 450;
+    font-family: 'Poppins', sans-serif;
+}
+
+button:active{
+    background-color: #4d648d;
+}
+
+div.result-container{
+    display: none;
+    margin: 15px 0;
+}
+
+div.result-container div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.result-container div img{
+    width: 100px;
+}
+
+div.result-container div span{
+    font-size: 1.6rem;
+    margin: 0 5px;
+}
