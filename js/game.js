@@ -35,9 +35,9 @@ function playRound(){
             resultContainer.innerHTML= `
             <h2 class="result">CONGRATULATIONS YOU <strong>WON</strong></h2>
             <div>
-                <img class="result-img" id="player-selection" src="../images/${activeCard.id}.svg">
+                <img class="result-img" id="player-selection" src="./images/${activeCard.id}.svg">
                 <span>X</span>
-                <img class="result-img" id="computer-selection" src="../images/${computerSelection.toLowerCase()}.svg">
+                <img class="result-img" id="computer-selection" src="./images/${computerSelection.toLowerCase()}.svg">
             </div>`;
             resultContainer.style.display= "block";
     };
