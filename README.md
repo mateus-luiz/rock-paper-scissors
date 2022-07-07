@@ -8,3 +8,5 @@
 
 
 <p> The architecture is feature-based from </p> ![The Odin Project](https://www.theodinproject.com/lessons/foundations-rock-paper-scissors#assignment)
+
+Github Pages: (https://mateus-luiz.github.io/rock-paper-scissors/)
