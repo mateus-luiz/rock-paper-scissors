@@ -48,15 +48,15 @@ a.game-card.active{
 }
 
 a.game-card.rock{
-    background-image: url("./rock.svg");
+    background-image: url("../rock.svg");
 }
 
 a.game-card.paper{
-    background-image: url("./paper.svg");
+    background-image: url("../paper.svg");
 }
 
 a.game-card.scissors{
-    background-image: url("./scissors.svg");
+    background-image: url("../scissors.svg");
 }
 
 button{
