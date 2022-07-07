@@ -24,6 +24,7 @@ playBtn.addEventListener('click',  () => {
 });
 
 function playRound(){
+    
     const computerSelection = computerPlay();
     const playerSelection = playerSelect();
     const resultContainer = document.getElementById('result');
@@ -47,9 +48,9 @@ function playRound(){
             resultContainer.innerHTML= `
             <h2 class="result">YOU <strong>LOSE</strong></h2>
             <div>
-                <img class="result-img" id="player-selection" src="../images/${activeCard.id}.svg">
+                <img class="result-img" id="player-selection" src="./images/${activeCard.id}.svg">
                 <span>X</span>
-                <img class="result-img" id="computer-selection" src="../images/${computerSelection.toLowerCase()}.svg">
+                <img class="result-img" id="computer-selection" src="./images/${computerSelection.toLowerCase()}.svg">
             </div>`;
             resultContainer.style.display= "block";
     }
@@ -66,8 +67,6 @@ function computerPlay(){
             return "PAPER";
         case 2:
             return "SCISSORS";
-        default:
-            return "IS NOT A VALID OPTION!";
     }
 }
 
@@ -81,7 +80,5 @@ function playerSelect(){
             return 'PAPER';
         case 'SCISSORS':
             return 'SCISSORS';
-        default:
-            return 'IS NOT A VALID OPTION!';
     }
 }
